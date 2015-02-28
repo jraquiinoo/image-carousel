@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="assets/css/site.css"/>
+	</head>
+	<body>
+		<header>
+			<nav><span style="line-height: 64px;font-weight: bold;">Header</span></nav>
+		</header>
+		<main>
+			
+			<div style="width: 1000px; margin: auto;font-family: sans-serif; color: gray">
+				<div class="carousel-container" style='height: 400px; width: 100%; position: relative;'>
+					<ul class="carousel">
+						<li><img src="http://dummyimage.com/1000x400/fa0058/fff"/></li>
+						<li><img src="http://dummyimage.com/1000x400/33b5e5/fff"/></li>
+						<li><img src="http://dummyimage.com/1000x400/00b80f/fff"/></li>
+					</ul>
+					<div id="next" class="round-btn" style="position:absolute;right: 10px;top: 50%;transform: translateY(-50%);"><span style="line-height: 50px; font-weight: bold; font-size: 1.5em;">&gt;</span></div>
+					<div id="prev" class="round-btn" style="position:absolute;left: 10px;top: 50%;transform: translateY(-50%);"><span style="line-height: 50px; font-weight: bold; font-size: 1.5em;">&lt;</span></div>
+				</div>
+				<div class="hr"></div>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget fermentum lorem. Donec pretium lectus at blandit fermentum. Donec quis dui at metus blandit cursus. Aliquam pretium eu elit non rhoncus. Quisque a tempus purus, quis pulvinar nisi. Cras faucibus ex a augue ultrices, sit amet tempus massa ornare. Pellentesque molestie feugiat mattis. In porta pretium tincidunt. Proin rhoncus volutpat convallis. Mauris ipsum ante, elementum vel ante eget, ultricies posuere turpis.</p>
+
+					<p>Praesent elit lectus, tincidunt eget elementum nec, lacinia at quam. Donec tortor justo, varius non accumsan eget, dignissim id turpis. Mauris ultrices nec diam quis tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam bibendum mauris vel elit bibendum bibendum. Quisque congue cursus lectus vel rhoncus. Cras semper eros a nisl auctor pretium. Maecenas eget turpis dignissim mi interdum accumsan.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget fermentum lorem. Donec pretium lectus at blandit fermentum. Donec quis dui at metus blandit cursus. Aliquam pretium eu elit non rhoncus. Quisque a tempus purus, quis pulvinar nisi. Cras faucibus ex a augue ultrices, sit amet tempus massa ornare. Pellentesque molestie feugiat mattis. In porta pretium tincidunt. Proin rhoncus volutpat convallis. Mauris ipsum ante, elementum vel ante eget, ultricies posuere turpis.</p>
+
+					<p>Praesent elit lectus, tincidunt eget elementum nec, lacinia at quam. Donec tortor justo, varius non accumsan eget, dignissim id turpis. Mauris ultrices nec diam quis tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam bibendum mauris vel elit bibendum bibendum. Quisque congue cursus lectus vel rhoncus. Cras semper eros a nisl auctor pretium. Maecenas eget turpis dignissim mi interdum accumsan.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget fermentum lorem. Donec pretium lectus at blandit fermentum. Donec quis dui at metus blandit cursus. Aliquam pretium eu elit non rhoncus. Quisque a tempus purus, quis pulvinar nisi. Cras faucibus ex a augue ultrices, sit amet tempus massa ornare. Pellentesque molestie feugiat mattis. In porta pretium tincidunt. Proin rhoncus volutpat convallis. Mauris ipsum ante, elementum vel ante eget, ultricies posuere turpis.</p>
+
+					<p>Praesent elit lectus, tincidunt eget elementum nec, lacinia at quam. Donec tortor justo, varius non accumsan eget, dignissim id turpis. Mauris ultrices nec diam quis tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam bibendum mauris vel elit bibendum bibendum. Quisque congue cursus lectus vel rhoncus. Cras semper eros a nisl auctor pretium. Maecenas eget turpis dignissim mi interdum accumsan.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget fermentum lorem. Donec pretium lectus at blandit fermentum. Donec quis dui at metus blandit cursus. Aliquam pretium eu elit non rhoncus. Quisque a tempus purus, quis pulvinar nisi. Cras faucibus ex a augue ultrices, sit amet tempus massa ornare. Pellentesque molestie feugiat mattis. In porta pretium tincidunt. Proin rhoncus volutpat convallis. Mauris ipsum ante, elementum vel ante eget, ultricies posuere turpis.</p>
+
+					<p>Praesent elit lectus, tincidunt eget elementum nec, lacinia at quam. Donec tortor justo, varius non accumsan eget, dignissim id turpis. Mauris ultrices nec diam quis tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam bibendum mauris vel elit bibendum bibendum. Quisque congue cursus lectus vel rhoncus. Cras semper eros a nisl auctor pretium. Maecenas eget turpis dignissim mi interdum accumsan.</p>
+					
+					<p>Proin ultrices congue rutrum. Nulla et purus pulvinar, sagittis eros nec, facilisis odio. Nam eleifend ac odio vel congue. Quisque viverra massa id lorem rhoncus.</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<span style="font-weight: bold;line-height: 64px;">Footer</span>
+		</footer>
+		<script src="assets/js/jquery.min.js"></script>
+		<script>
+
+			$(document).ready(function(){
+				$(".carousel").each(function(){
+					var parentWidth = parseInt($(this).parent().css("width").replace("px", ""));
+					var width = parentWidth * $(this).find("li").length;
+					console.log($(this).find("li"));
+					$(this).css("width", width);
+					$(this).attr("data-width", parentWidth);
+				});
+
+				$(".carousel li").each(function(){
+					$(this).css({
+						height: parseInt($(this).parents(".carousel-container").css("height").replace("px","")),
+						width: parseInt($(this).parents(".carousel-container").css("width").replace("px",""))
+					});
+				});
+
+				function next(carousel){
+					var left = carousel.position().left;
+					var width = parseInt(carousel.css("width").replace("px",""));
+					var parentWidth = parseInt(carousel.parent().css("width").replace("px", ""));
+					
+					if((left - parentWidth) * -1 == width ){
+						carousel.animate({
+							left: 0 + "px"
+						}, 400);
+					}
+					else{
+						carousel.animate({
+							left: "-=" + carousel.parent().css("width")
+						}, 400);
+					}
+				}
+
+				function previous(carousel){
+					var left = carousel.position().left;
+					var width = parseInt(carousel.css("width").replace("px",""));
+					var parentWidth = parseInt(carousel.parent().css("width").replace("px", ""));
+					
+					if(left == 0){
+						carousel.animate({
+							left: -1 * (width - parentWidth) + "px"
+						}, 400);
+					}
+					else{
+						carousel.animate({
+							left: "+=" + carousel.parent().css("width")
+						}, 400);
+					}
+				}
+
+
+				$(".carousel").each(function(){
+					var currentCarousel = $(this);
+					var animation = setInterval(function(){
+						next(currentCarousel);
+					}, 4000);
+
+					$("#next").click(function(){
+
+						clearInterval(animation);
+						next(currentCarousel);
+
+						animation = setInterval(function(){
+							next(currentCarousel);
+						}, 4000);
+					});
+
+					$("#prev").click(function(){
+
+						clearInterval(animation);
+						previous(currentCarousel);
+
+						animation = setInterval(function(){
+							next(currentCarousel);
+						}, 4000);
+					});
+				});
+			})
+			
+		</script>
+	</body>
+</html>

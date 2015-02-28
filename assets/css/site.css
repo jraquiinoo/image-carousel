@@ -1,0 +1,83 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+nav{
+	height: 64px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	box-shadow: 0px 1px 6px gray;
+	z-index: 99;
+	text-align: center;	
+}
+
+main{
+	padding: 100px 0;
+}
+
+footer{
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 64px;
+	background-color: white;
+	z-index: 99;
+	box-shadow: 0px 1px 6px gray;
+	text-align: center;
+}
+.carousel-container{
+	overflow: hidden;
+	box-shadow: 0px 2px 6px gray;
+}
+
+.round-btn{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: #EEEEEE;
+	box-shadow: 0px 2px 6px gray;
+	cursor: pointer;
+	text-align: center;
+	-webkit-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+
+.round-btn:hover{
+	box-shadow: 0px 4px 10px black;
+}
+
+.hr{
+	height: 1px;
+	width: 100%;
+	background-color: #CCCCCC;
+	margin: 35px 0;
+}
+
+ul.carousel{
+	position: absolute;
+	top:0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+ul.carousel li{
+	float: left;
+	height: 100%;
+	width: 100px;
+	overflow: hidden;
+}
+
+ul.carousel li img{
+	width: 100%;
+	height: 100%;
+}
